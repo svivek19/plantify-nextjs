@@ -16,15 +16,15 @@ export default async function handler(
     try {
       await connectToDatabase();
 
-      const { name, price, description } = req.body;
+      const { name, price, ratings, url } = req.body;
 
       // Validate product data
-      if (!name || typeof price !== "number" || !description) {
+      if (!name || typeof price !== "number") {
         return res.status(400).json({ error: "Invalid product data" });
       }
 
       // Create new product using Mongoose
-      const newProduct = new ProductModel({ name, price, description });
+      const newProduct = new ProductModel({ name, price, ratings, url });
       await newProduct.save();
 
       return res

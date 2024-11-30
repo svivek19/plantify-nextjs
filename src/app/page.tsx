@@ -29,7 +29,7 @@ const Page: React.FC = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <Plants />
+        <Plants products={[]} />
       </div>
 
       <div>

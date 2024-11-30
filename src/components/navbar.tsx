@@ -22,36 +22,6 @@ const navbar = () => {
           </Link>
         </div>
 
-        {/* Navigation Links */}
-        <div>
-          <ul className="flex gap-6 text-sm font-semibold text-green-700">
-            <li>
-              <Link
-                href="/"
-                className="hover:text-green-500 transition-colors duration-300"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/shop"
-                className="hover:text-green-500 transition-colors duration-300"
-              >
-                Shop
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/account"
-                className="hover:text-green-500 transition-colors duration-300"
-              >
-                My Account
-              </Link>
-            </li>
-          </ul>
-        </div>
-
         {/* User Actions */}
         <div>
           <ul className="flex items-center gap-6 text-sm font-medium text-green-700">

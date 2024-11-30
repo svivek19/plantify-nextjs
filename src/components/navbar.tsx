@@ -7,7 +7,7 @@ import logo from "../../public/logo.webp";
 const navbar = () => {
   return (
     <div>
-      <nav className="flex justify-between items-center p-4 bg-green-50">
+      <nav className="w-full flex justify-between items-center p-4 bg-green-50 fixed z-10 top-0">
         {/* Logo and Branding */}
         <div className="flex items-center gap-1">
           <Image
